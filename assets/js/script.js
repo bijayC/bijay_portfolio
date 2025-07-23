@@ -59,11 +59,11 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Roadashi Panta";
+            document.title = "Portfolio | Bijay Chhetri";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
-            document.title = "Portfolio | Roadashi Panta";
+            document.title = "Portfolio | Bijay Chhetri";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
     });
@@ -71,7 +71,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["data analytics", "machine learning", "product development", "supply chain","stastical modelling","energy systems"],
+    strings: ["Mechanical Engineer ", "Product Development", " Thermal Engineer", "Supply Chain","Project Management","energy systems"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
