@@ -459,6 +459,7 @@ header .navbar ul li a:hover {
 /* about section ends */
 
 /* skills section starts */
+/*
 .skills {
   min-height: 90vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
@@ -513,6 +514,7 @@ header .navbar ul li a:hover {
   margin-left: 0.5rem;
 }
 /* skills media queries starts*/
+/*
 @media screen and (max-width: 600px) {
   .skills .container {
     padding: 0;
@@ -529,11 +531,66 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 }
+*/
 /* skills media queries ends*/
 /* skills section ends */
 
 
 has context menu
+<!-- CSS (Add in your style.css) -->
+<style>
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-card {
+  position: relative;
+  background: #111;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  width: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card img {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.hover-text {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 0 0 10px 10px;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.skill-card:hover .hover-text {
+  bottom: 0;
+}
+</style>
+
+
 
 /* education section starts */
 .education {
