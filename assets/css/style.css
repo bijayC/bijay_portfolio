@@ -535,26 +535,46 @@ header .navbar ul li a:hover {
 /* skills media queries ends*/
 /* skills section ends */
 
+/* ===== New Skills Section (Interactive Hover Cards) ===== */
+.skills {
+  min-height: 90vh;
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  padding-bottom: 50px;
+}
 
-has context menu
-<!-- CSS (Add in your style.css) -->
-<style>
+.skills h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills .heading span {
+  color: rgb(255, 230, 0);
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   justify-items: center;
+  background: rgba(0, 0, 22, 0.4);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
 }
 
 .skill-card {
   position: relative;
-  background: #111;
+  background: rgba(0, 0, 22, 0.9);
   border-radius: 10px;
   text-align: center;
   padding: 15px;
   width: 150px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .skill-card img {
@@ -565,11 +585,13 @@ has context menu
 .skill-card h3 {
   color: #fff;
   font-size: 1rem;
+  margin-bottom: 10px;
 }
 
+/* Hover effect */
 .skill-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .hover-text {
@@ -588,7 +610,17 @@ has context menu
 .skill-card:hover .hover-text {
   bottom: 0;
 }
-</style>
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+
 
 
 
