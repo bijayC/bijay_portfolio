@@ -459,7 +459,7 @@ header .navbar ul li a:hover {
 /* about section ends */
 
 /* skills section starts */
-/*
+
 .skills {
   min-height: 90vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
@@ -514,7 +514,7 @@ header .navbar ul li a:hover {
   margin-left: 0.5rem;
 }
 /* skills media queries starts*/
-/*
+
 @media screen and (max-width: 600px) {
   .skills .container {
     padding: 0;
@@ -531,12 +531,12 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 }
-*/
+
 /* skills media queries ends*/
 /* skills section ends */
 
 /* ===== New Skills Section (Interactive Hover Cards) ===== */
-.skills {
+/*.skills {
   min-height: 90vh;
   background: linear-gradient(to bottom, #57059e, #4a00e0);
   padding-bottom: 50px;
@@ -589,7 +589,7 @@ header .navbar ul li a:hover {
 }
 
 /* Hover effect */
-.skill-card:hover {
+/*.skill-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
@@ -612,13 +612,14 @@ header .navbar ul li a:hover {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: 1rem;
   }
 }
+*/
 
 
 
