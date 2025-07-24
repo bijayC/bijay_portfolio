@@ -1435,18 +1435,53 @@ form .button-area {
 }
 /* scroll top ends */
 
+/* volunteering section */
 .volunteering {
-  background: linear-gradient(to bottom, #1a1a1a, #333);
+  background: linear-gradient(to bottom, #0a174e, #142850);
+  padding: 3rem 9%;
 }
-
 .volunteering h2 {
   color: #fff;
+}
+.volunteering .heading span {
+  color: #ffcc00;
+}
+.volunteer-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.volunteer-box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #ffffff10;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  min-height: 28rem;
+}
+.volunteer-box img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+.volunteer-box .content {
   padding: 1rem;
+  background: #fff;
+}
+.volunteer-box .tag h3 {
+  font-size: 2rem;
+  color: #012970;
+}
+.volunteer-box .desc p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333;
+  margin-top: 1rem;
 }
 
-.volunteering .heading span {
-  color: rgb(255, 208, 0);
-}
 
 
 
