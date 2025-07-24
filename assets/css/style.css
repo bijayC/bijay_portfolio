@@ -1435,51 +1435,73 @@ form .button-area {
 }
 /* scroll top ends */
 
+
 /* volunteering section */
 .volunteering {
-  background: linear-gradient(to bottom, #0a174e, #142850);
-  padding: 3rem 9%;
+  background: linear-gradient(to bottom, #240964, #28063be1);
 }
 .volunteering h2 {
   color: #fff;
+  padding: 1rem;
 }
 .volunteering .heading span {
-  color: #ffcc00;
+  color: rgb(255, 230, 0);
 }
-.volunteer-box-container {
+.volunteering .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin: 2rem;
 }
-.volunteer-box {
+.volunteering .box {
   flex: 1 1 30rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  background: #ffffff10;
   position: relative;
   overflow: hidden;
-  height: auto;
-  min-height: 28rem;
+  height: 30rem;
+  background: #fff;
 }
-.volunteer-box img {
-  height: 180px;
+.volunteering .box img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.volunteer-box .content {
-  padding: 1rem;
-  background: #fff;
+.volunteering .box .content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 85%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
 }
-.volunteer-box .tag h3 {
+.volunteering .box .content .tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+  padding-left: 1rem;
+  background: #ffd900;
+}
+.volunteering .box .content .tag h3 {
   font-size: 2rem;
-  color: #012970;
 }
-.volunteer-box .desc p {
-  font-size: 1.4rem;
-  line-height: 2rem;
-  color: #333;
-  margin-top: 1rem;
+.volunteering .box:hover .content {
+  top: 25%;
+}
+.volunteering .desc {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.volunteering .desc p {
+  font-size: 1.5rem;
+  color: #000;
 }
 
 
